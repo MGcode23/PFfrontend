@@ -14,9 +14,15 @@
     padding-top: 5px;
     padding-bottom: 5px;
     width: 350px;
-
-}
-.rendersignup {
+  
+  }
+  
+  @media (max-width: 768px) {
+    #button_login {
+      width: 100%;
+    }
+  }
+  .rendersignup {
     background: #FFFFFF;
     border: 4px solid #BE8123;
     border-radius: 60px;
@@ -30,22 +36,26 @@
 
     color: #BE8123;
 }
+
 #floatingInput {
     width: 350px;
     background: #EEEEEE;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 60px;
 }
+
 #floatingPassword {
     width: 350px;
     background: #EEEEEE;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 60px;
 }
+
 #exampleModalToggle {
     border-radius: 60px;
     
 }
+
 #password, #email {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -54,6 +64,7 @@
     line-height: 23px;
     color: #878787;
 }
+
 .questionlogin {
     font-family: 'Fredoka';
     font-style: normal;
@@ -62,4 +73,30 @@
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #381A07;
+}
+
+@media (max-width: 768px) {
+  .rendersignup {
+    width: 100%;
+  }
+
+  #floatingInput {
+    width: 100%;
+  }
+
+  #floatingPassword {
+    width: 100%;
+  }
+
+  #exampleModalToggle {
+    border-radius: 0px;
+  }
+
+  #password, #email {
+    font-size: 14px;
+  }
+
+  .questionlogin {
+    font-size: 16px;
+  }
 }
